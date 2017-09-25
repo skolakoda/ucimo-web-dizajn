@@ -1,0 +1,23 @@
+/* PODRAZUMEVANI STILOVI */
+
+body {
+  background: #F6E497;
+  color: #4C1B1B;
+  font-family: Arial;
+  margin: 5%;
+}
+
+h1 {
+  font-size: 66px;
+  color: #B9121B;
+}
+
+p {
+  text-align: right;
+}
+
+/*KLASE*/
+
+.left-align {
+  text-align: left;
+}
