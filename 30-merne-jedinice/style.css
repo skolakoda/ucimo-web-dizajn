@@ -1,0 +1,46 @@
+/* ELEMENTI */
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-size: 1.4em;
+}
+
+h1 {
+  font-size: 66px;
+}
+
+p {
+  text-align: right;
+}
+
+div {
+  overflow:auto;
+}
+
+/*KLASE*/
+
+.left-align {
+  text-align: left;
+}
+
+.kvadrat,
+.kvadrat2,
+.kvadrat3 {
+  height:100vh;
+}
+
+.kvadrat {
+  background: #432C51;
+  color: #FFD464;
+}
+
+.kvadrat2 {
+  color: #5A3662;
+  background: #FFD464;
+}
+
+.kvadrat3 {
+  color: #432C51;
+  background: #FFFB85;
+}
