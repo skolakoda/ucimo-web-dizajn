@@ -1,7 +1,37 @@
+
+body {
+  margin: 0;
+}
+
 nav {
   background: black;
+  text-align: center;
 }
 
 nav a {
     color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.logo {
+  vertical-align: top;
+}
+
+.naslovna .naslovna-nav,
+.kontakt .kontakt-nav,
+.aktivnosti .aktivnosti-nav,
+.o-nama .o-nama-nav {
+  background: crimson;
 }
