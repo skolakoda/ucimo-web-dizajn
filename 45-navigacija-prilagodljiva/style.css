@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+}
+
+nav {
+  background: black;
+  text-align: center;
+}
+
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo {
+  vertical-align: top;
+  width: 100%;
+}
+
+.naslovna .naslovna-nav,
+.kontakt .kontakt-nav,
+.aktivnosti .aktivnosti-nav,
+.o-nama .o-nama-nav {
+  background: crimson;
+}
+
+@media (min-width: 1000px) {
+
+
+	nav {
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-family: sans serif;
+		text-align: right;
+	}
+
+	nav a {
+		display: inline-block;
+		margin-left: 5%;
+	}
+
+	.wrapper {
+	  padding-left: 10%;
+	  padding-right: 10%;
+	}
+
+}
+
