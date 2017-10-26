@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding-top: 48px;
+}
+
+header, 
+footer {
+    background: black;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1,
+header p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.paralax {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: -1; /* stavlja element u pozadinu */
+}
