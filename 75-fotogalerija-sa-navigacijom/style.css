@@ -1,0 +1,19 @@
+body {
+    background: #eee;
+}
+
+.okvir-slike {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.okvir-slike img {
+    max-width: 90%;
+}
+
+.strelica-levo,
+.strelica-desno {
+    font-size: 60px;
+    text-decoration: none;
+}

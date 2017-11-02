@@ -1,0 +1,12 @@
+body {
+    background: black;
+}
+
+img {
+    height: 200px;
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 1;
+}
