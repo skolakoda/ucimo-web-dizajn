@@ -7,17 +7,15 @@
 </head>
 <body>
 
-    <form>
+    <form action="https://formspree.io/mudroljub@gmail.com" method="POST">
         <h1>Vrste input polja</h1>
         
-        <p>Ime i prezime</p>
-        <input type="text" placeholder="Unesite ovde" required>
-
-        <p>Grad rođenja</p>
-        <input value="Beograd">
+        <label>Ime i prezime
+            <input name="ime" type="text" placeholder="Unesite ovde" required>
+        </label>
 
         <p>Datum rođenja</p>
-        <input type="date">
+        <input name="datum" type="date">
 
         <p>Godine</p>
         <input type="number" min="7" max="107">
@@ -29,13 +27,21 @@
         <input type="url" placeholder="http://www.example.com">
 
         <p>Telefon</p>
-        <input type="tel" value="+381" required>
+        <input type="tel" value="+381">
 
+        <p>Izaberite uslugu</p>
+        <select>
+            <option value=""></option>
+            <option value="1">Masaža lica</option>
+            <option value="2">Pedikir</option>
+            <option value="3">Manikir</option>
+            <option value="4">Sauna</option>
+        </select>
+        
         <p>Ovde ostavite poruku</p>
-        <textarea cols="30" rows="10"></textarea>
-    
-        <button>Pošalji</button>
+        <textarea cols="30" rows="10"></textarea><br>
 
+        <button>Pošalji</button>
     </form>
     
 </body>
