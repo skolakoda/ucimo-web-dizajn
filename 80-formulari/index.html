@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulari</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulari</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <form action="https://formspree.io/mudroljub@gmail.com" method="POST">
-        <h1>Vrste input polja</h1>
-        
-        <label>Ime i prezime
-            <input name="ime" type="text" placeholder="Unesite ovde" required>
-        </label>
+  name je ono što se šalje na server
+  id je potreban da bi radila labela
 
-        <p>Datum rođenja</p>
-        <input name="datum" type="date">
+  <form action="https://formspree.io/mudroljub@gmail.com" method="POST">
+    <h1>Vrste input polja</h1>
 
-        <p>Godine</p>
-        <input type="number" min="7" max="107">
+    <label for="ime">Ime i prezime *</label>
+    <input type="text" name="ime" id="ime" placeholder="Unesite ovde" required>
 
-        <p>Email</p>
-        <input type="email" required>
+    <label>Email *</label>
+    <input type="email" required>
 
-        <p>Vaš sajt</p>
-        <input type="url" placeholder="http://www.example.com">
+    <label for="telefon">Telefon *</label>
+    <input type="tel" placeholder="+381" name="telefon" id="telefon" minlength="9" required>
 
-        <p>Telefon</p>
-        <input type="tel" value="+381">
+    <label>Pol:</label>
+    <label>
+      <input type="radio" name="pol" value="1"> muški
+    </label>
+    <label>
+      <input type="radio" name="pol" value="2"> ženski
+    </label>
 
-        <p>Izaberite uslugu</p>
-        <select>
-            <option value=""></option>
-            <option value="1">Masaža lica</option>
-            <option value="2">Pedikir</option>
-            <option value="3">Manikir</option>
-            <option value="4">Sauna</option>
-        </select>
-        
-        <p>Ovde ostavite poruku</p>
-        <textarea cols="30" rows="10"></textarea><br>
+    <label for="sajt">Online portfolio</label>
+    <input type="url" placeholder="http://www.example.com" name="sajt" id="sajt">
 
-        <button>Pošalji</button>
-    </form>
-    
+    <label for="datum">Datum rođenja</label>
+    <input type="date" name="datum" id="datum">
+
+    <label for="godine">Godine</label>
+    <input type="number" min="7" max="107" name="godine" id="godine">
+
+    <label for="usluga">Izaberite kurs</label>
+    <select name="usluga" id="usluga">
+      <option value=""></option>
+      <option value="1">Javascript</option>
+      <option value="2">Python</option>
+      <option value="3">C/C++</option>
+      <option value="4">PHP</option>
+    </select>
+
+    <label for="poruka">Ostavite poruku *</label>
+    <textarea cols="30" rows="10" name="poruka" id="poruka" required></textarea><br>
+
+    <button>Pošalji</button>
+  </form>
+
 </body>
+
 </html>
